@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  idor-challenge:
+    build: .
+    ports:
+      - "9090:3000"  # Map port 9090 on the host to port 3000 in the container
+    restart: always
